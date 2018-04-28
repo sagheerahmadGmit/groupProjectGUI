@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="images/ts.png">
+	<title>Tech Shop</title>
+	
+	    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+ integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+	
+<style>
+
+	.ccc {background-color: lightgrey;
+		border: 5px solid white;
+		height: 200px;
+		width: 33%;
+	 }
+	 
+	#left{
+	width: 33%;
+	float:left;
+	}
+	#center{
+		width: 33%;
+		float:left;
+	}
+	#right{
+		width: 34%;
+		position: relative;
+		float: left;
+	}
+
+	.coupon{
+			color: red;
+			font-size: 25px;
+		}
+		
+	body{
+		background-image: url("images/background.jpg");
+	}
+
+
+	#phoneBox{
+		border: 2px solid black;
+		padding:20px;
+		background-image: url("Phone Images/Wallpaper.jpg");
+		border-radius: 8px;
+	}
+	.buy{
+		border-radius: 8px;
+		font-size: 24px;
+		background-color: #555555;
+	}
+	
+	#buttonP{
+		text-align:right;
+	}
+	#info{
+		text-align:center;
+	}
+	h2{
+		text-align:center;
+		text-decoration: underline;
+		font-weight:bold;
+	}
+	#price{
+		text-align: center;
+		font-weight: bold;
+		color: blue;
+	}
+
+	
+
+</style>
+</head>
+<body>
+<!-- Buttons and Logo -->
+
+<div class = "container">
+<br><br>
+<nav class="navbar navbar-expand" style="background-color: lightgrey;">
+  <a class="navbar-brand" href="index.html">TechShop</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">&nbsp &nbsp Home &nbsp &nbsp<span class="sr-only">(current)</span></a>
+      </li>	
+      <li class="nav-item active">
+        <a class="nav-link" href="phones.html">&nbsp &nbsp Phones &nbsp &nbsp &nbsp<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="logout.html">&nbsp &nbsp Logout &nbsp &nbsp</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="login.html">&nbsp &nbsp Login &nbsp &nbsp</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="contacts.html">&nbsp &nbsp Contacts &nbsp &nbsp</a>
+      </li>	
+      <li class="nav-item active">
+        <a class="nav-link" href="moreAboutUs.html">&nbsp More About Us</a>
+      </li>	  
+    </ul>
+  </div>
+</nav>
+<hr></hr>
+
+
+
+	<div id = "phoneBox">
+		<h1>iPhone x</h1>
+		<img src="Phone images/apple-iphone-x.png" alt="iPhone x" align="left"> <br><br><br><br><h2>Info<h2><h4 id="info"> Say hello to the future. iPhone X features a brand-new design that’s almost all screen. Immersive and intelligent, the iPhone X can respond to a tap, a voice and even a glance. The advanced camera and video system provide stunning portrait and slow-motion results, while the A11 Bionic processor powers apps from augmented reality to social media.</h4><h3 id="price">Price: €1129.99</h3>
+		<br><br><br><br><br>
+		<p id="buttonP"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Purchase</button></p>
+		<div class="modal fade" id="myModal">
+			  <div class="modal-dialog">
+				<div class="modal-content">
+
+				  <!-- Modal Header -->
+				  <div class="modal-header">
+					<h4 class="modal-title">Purchase the iPhone X</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				  </div>
+
+				  <!-- Modal body -->
+				  <div class="modal-body">
+					<img src="Phone images/apple-iphone-x.png" alt="iPhone x"><br><br>
+					Enter Name: <input class="name" type="text" name="username">
+					<br><br>
+					Enter Coupon Code: <input class="eCoupon" type="text" name="eCoupon">
+				  </div>
+
+				  <!-- Modal footer -->
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-success" data-dismiss="modal" onclick="cost()">Add to Cart</button>
+				  </div>
+
+				</div>
+			  </div>
+		</div>
+	</div>
+	<br>
+	<div id = "phoneBox">
+		<h1>iPhone 7</h1>
+		<img src="Phone images/apple-iphone-7.png" alt="iPhone 7" align="left"> <br><br><br><br><h2 text>Info<h2><h4 id="info"> Apple iPhone 7 is the most innovative and creative iPhone yet. Your iPhone is now water and splash resistant to a rating of IP67. You will also enjoy a new audio experience with Lightning Connector EarPods. SIM free option available (SIM free pricing shown is online only).</h4><h3 id="price">Price: €599.99</h3>
+		<br><br><br><br><br><br>
+		<p id="buttonP"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">Purchase</button></p>
+		<div class="modal fade" id="myModal2">
+			  <div class="modal-dialog">
+				<div class="modal-content">
+
+				  <!-- Modal Header -->
+				  <div class="modal-header">
+					<h4 class="modal-title">Purchase the iPhone 7</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				  </div>
+
+				  <!-- Modal body -->
+				  <div class="modal-body">
+					<img src="Phone Images/apple-iphone-7.png" alt="iPhone 7"><br><br>
+					Enter Name: <input class="name" type="text" name="username">
+					<br><br>
+					Enter Coupon Code: <input class="eCoupon" type="text" name="eCoupon">
+				  </div>
+
+				  <!-- Modal footer -->
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-success" data-dismiss="modal" onclick="cost()">Add to Cart</button>
+				  </div>
+
+				</div>
+			  </div>
+		</div>
+	</div>
+	<br>
+	<div id = "phoneBox">
+		<h1>Samsung Galaxy s9</h1>
+		<img src="Phone images/Samsung-Galaxy s9.png" alt="Samsung Galaxy s9" align="left"> <br><br><br><br><h2 text>Info<h2><h4 id="info"> The Camera. Reimagined. The Galaxy S9 is packed with incredible features to help you do more than you ever imagined. With a revolutionary camera that adapts like the human eye, get ready to capture your world like never before. SIM free option available (SIM free pricing shown is online only).</h4><h3 id="price">Price: €809.99</h3>
+		<br><br><br><br><br><br>
+		<p id="buttonP"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal3">Purchase</button></p>
+		<div class="modal fade" id="myModal3">
+			  <div class="modal-dialog">
+				<div class="modal-content">
+
+				  <!-- Modal Header -->
+				  <div class="modal-header">
+					<h4 class="modal-title">Purchase the Samsung Galaxy s9</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				  </div>
+
+				  <!-- Modal body -->
+				  <div class="modal-body">
+					<img src="Phone images/Samsung-Galaxy s9.png" alt="Samsung Galaxy s9"><br><br>
+					Enter Name: <input class="name" type="text" name="username">
+					<br><br>
+					Enter Coupon Code: <input class="eCoupon" type="text" name="eCoupon">
+				  </div>
+
+				  <!-- Modal footer -->
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-success" data-dismiss="modal" onclick="cost()">Add to Cart</button>
+				  </div>
+
+				</div>
+			  </div>
+		</div>
+	</div>
+	<br>
+	<div id = "phoneBox">
+		<h1>Samsung Galaxy s8</h1>
+		<img src="Phone images/Samsung-Galaxy-s8.png" alt="Samsung Galaxy s8" align="left"> <br><br><br><br><h2 text>Info<h2><h4 id="info"> The Samsung Galaxy S8 features the beautiful rounded-corner Infinity Display and symmetrical metal sides that blend effortlessly for a seamless look. A stylish and powerful handset. SIM free option available (SIM free pricing shown is online only).</h4><h3 id="price">Price: €629.99</h3>
+		<br><br><br><br><br><br>
+		<p id="buttonP"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal4">Purchase</button></p>
+		<div class="modal fade" id="myModal4">
+			  <div class="modal-dialog">
+				<div class="modal-content">
+
+				  <!-- Modal Header -->
+				  <div class="modal-header">
+					<h4 class="modal-title">Purchase the Samsung Galaxy s8</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				  </div>
+
+				  <!-- Modal body -->
+				  <div class="modal-body">
+					<img src="Phone images/Samsung-Galaxy-s8.png" alt="Samsung Galaxy s8"><br><br>
+					Enter Name: <input class="name" type="text" name="username">
+					<br><br>
+					Enter Coupon Code: <input class="eCoupon" type="text" name="eCoupon">
+				  </div>
+
+				  <!-- Modal footer -->
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-success" data-dismiss="modal" onclick="cost()">Add to Cart</button>
+				  </div>
+
+				</div>
+			  </div>
+		</div>
+	</div>
+	<br>
+	<div id = "phoneBox">
+		<h1>Huawei p20</h1>
+		<img src="Phone images/huawei-p20.png" alt="Huawei P20" align="left"> <br><br><br><br><h2 text>Info<h2><h4 id="info"> The Huawei P20 introduces the all new Leica Dual Camera delivering clear, richly detailed expert quality photographs. The Huawei P20 is powered by the Kirin 970 chipset. It boosts 128GB internal storage, plenty of storage space for every brilliant moment captured.</h4>
+		<br><br><br><br><br><br><h3 id="price">Price: €549.99</h3>
+		<p id="buttonP"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal5">Purchase</button></p>
+		<div class="modal fade" id="myModal5">
+			  <div class="modal-dialog">
+				<div class="modal-content">
+
+				  <!-- Modal Header -->
+				  <div class="modal-header">
+					<h4 class="modal-title">Purchase the Huawei P20</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				  </div>
+
+				  <!-- Modal body -->
+				  <div class="modal-body">
+					<img src="Phone images/huawei-p20.png" alt="Huawei P20"><br><br>
+					Enter Name: <input class="name" type="text" name="username">
+					<br><br>
+					Enter Coupon Code: <input class="eCoupon" type="text" name="eCoupon">
+				  </div>
+
+				  <!-- Modal footer -->
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-success" data-dismiss="modal" onclick="cost()">Add to Cart</button>
+				  </div>
+
+				</div>
+			  </div>
+		</div>
+	</div>
+	<br>
+	<div id = "phoneBox">
+		<h1>Sony Xperia</h1>
+		<img src="Phone images/sony-xperia.png" alt="Sony Xperia" align="left"> <br><br><br><br><h2 text>Info<h2><h4 id="info"> The Sony Xperia XZ2 is packed with all of the features you would expect from the Xperia range aswell as the lastest Sony technologies to deliver an entertainment experience that touches all your senses. A 19MP main camera, 4K HDR movie recording, powerful stereo sound and much more.</h4><h3 id="price">Price: €649.99</h3>
+		<br><br><br><br><br><br>
+		<p id="buttonP"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal6">Purchase</button></p>
+		<div class="modal fade" id="myModal6">
+			  <div class="modal-dialog">
+				<div class="modal-content">
+
+				  <!-- Modal Header -->
+				  <div class="modal-header">
+					<h4 class="modal-title">Purchase the Sony Xperia</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				  </div>
+
+				  <!-- Modal body -->
+				  <div class="modal-body">
+					<img src="Phone images/sony-xperia.png" alt="Sony Xperia"><br><br>
+					Enter Name: <input class="name" type="text" name="username">
+					<br><br>
+					Enter Coupon Code: <input class="eCoupon" type="text" name="eCoupon">
+				  </div>
+
+				  <!-- Modal footer -->
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-success" data-dismiss="modal" onclick="cost()">Add to Cart</button>
+				  </div>
+
+				</div>
+			  </div>
+		</div>
+	</div>
+	<br>	
+
+
+	<hr><hr>	
+	
+		<div class="row">
+			<div class = "col-lg-12 ccc" id = "colour">
+				<br>
+				<div id="left">
+				<h3><b>Contacts</b></h3>
+				<p><b>Email: <a href="https://www.google.com/gmail/about/#"> techGeeks@gmail.com</a></b></p>
+				<p><b>Phone: 085 123 2132</b></p>					
+				</div>
+
+				<div id ="center">
+				<a href ="https://www.instagram.com/" ><img src="images/instagram.png" alt="Instagram Logo" width="100" height="100"></a>
+				<a href="https://www.google.com/gmail/about/#"><img src="images/gmail.png" alt="Gmail Logo" width="100" height="100"><a>
+				</div>
+				<div id ="right">
+				<a href ="https://twitter.com/"> <img src="images/twitter.png" alt="Twitter Logo" width="100" height="100"></a>
+				<a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook Logo" width="100" height="100"></a>
+				<input id = "colour1" type="color">
+				</div>
+				<marquee behavior="scroll" direction="left" class="coupon">Use Coupon code WEREAMAZING for 10% Off!</marquee>
+			</div>	
+		</div>
+	</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+	
+<script>
+	function cost()
+	{
+		alert("Added to basket!");
+	}
+	var col = document.getElementById("colour");
+	col.addEventListener("input",myFunction);
+				
+	function myFunction()
+	{
+		var newColour = document.getElementById("colour1").value;
+		document.getElementById("colour").style.backgroundColor = newColour;
+	}
+
+	
+</script>
+	
+</body>
+</html> 

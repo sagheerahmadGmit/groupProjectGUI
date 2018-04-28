@@ -1,0 +1,17 @@
+<!DOCTYPE>
+<html>
+	<body>
+		<h1>Page dos</h1>
+		<a href="ex51.html">Go to page 1</a><hr>
+		<button onclick="recover()">Recover from Local Storage</button>
+		<br>
+		<h2 id="writeout"></h2>
+	</body>
+</html>
+<script>
+	function recover()
+	{
+		sessionStorage.myNewItem;
+		document.getElementById("writeout").innerHTML = sessionStorage.myNewItem;
+	}
+</script>

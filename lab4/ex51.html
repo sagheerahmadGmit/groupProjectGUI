@@ -1,0 +1,15 @@
+<!DOCTYPE>
+<html>
+	<body>
+		<h1>Page Uno</h1>
+		<a href="ex52.html">Go to page 2</a><hr>
+		<input type="text" id="name">
+		<button onclick="save()">save to local storage</button>
+	</body>
+</html>
+<script>
+	sessionStorage.myItem = "Hello Web Storage";
+	function save(){
+		sessionStorage.myNewItem = document.getElementById("name").value;
+	}
+</script>

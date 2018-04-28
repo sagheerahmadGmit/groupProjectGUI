@@ -1,0 +1,16 @@
+<!DOCTYPE>
+<html>
+	<body>
+		<h1>CHECKOUT</h1>
+		<a href="ex6home.html">Go Home Page</a><hr>
+		<h2 id="greet"></h2>
+		<img id="kindle" src="kindle.jpg" height="50%"><br>
+		<p id="cost"></p>
+		<button onclick="save()">Confirm</button>
+	</body>
+</html>
+<script>
+		document.getElementById("greet").innerHTML = "Hello " + localStorage.name + " this is what you ordered";
+		document.getElementById("cost").innerHTML = "<br><br>Price is " + sessionStorage.myQuantity * 100 + "€";
+		sessionStorage.myNewItem = document.getElementById("name").value;
+</script>

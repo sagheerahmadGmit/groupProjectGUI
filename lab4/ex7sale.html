@@ -1,0 +1,41 @@
+<!DOCTYPE>
+<html>
+	<body>
+		<h1>ITEM</h1>
+		<a href="ex7home.html">Go Home Page</a><hr>
+		<!-- item 1 -->
+		<h3>Echo Dot (2nd Generation) - Black</h3>
+		<img src="alexa.jpg" height="50%"><br>
+		PRICE:  €49.99 each<br><hr>
+		Enter Quantity: <input type="text" id="quantity1"> <button onclick="addAlexa()">Add to cart</button>
+		<br><br>
+		<!-- item 2 -->
+		<h3>Beats Solo3 Wireless On-Ear Headphones - Neighbourhood Collection </h3>
+		<img src="headset.jfif" height="50%"><br>
+		PRICE: €231 each<br><hr>
+		Enter Quantity: <input type="text" id="quantity2"> <button onclick="addHeadset()">Add to cart</button>
+		<br><br>
+		<!-- item 3 -->
+		<h3>Samsung Gear 3 Smart Watch</h3>
+		<img src="watch.jpg" height="50%"><br>
+		PRICE:  €340<br><hr>
+		Enter Quantity: <input type="text" id="quantity3"> <button onclick="addWatch()">Add to cart</button>
+		<br><br>
+		<button><a href="ex7checkout.html" style="text-decoration:none;">See cart</a></button>
+	</body>
+</html>
+<script>
+	sessionStorage.quantityAlexa = 0;
+	sessionStorage.quantityHeadset = 0;
+	sessionStorage.quantityWatch = 0;
+
+	function addAlexa(){
+		sessionStorage.quantityAlexa = document.getElementById("quantity1").value;
+	}
+	function addHeadset(){
+		sessionStorage.quantityHeadset = document.getElementById("quantity2").value;
+	}
+	function addWatch(){		
+		sessionStorage.quantityWatch = document.getElementById("quantity3").value;
+	}
+</script>

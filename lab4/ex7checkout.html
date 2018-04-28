@@ -1,0 +1,18 @@
+<!DOCTYPE>
+<html>
+	<body>
+		<h1>CHECKOUT</h1>
+		<a href="ex7home.html">Go Home Page</a><hr>
+		<h2 id="greet"></h2>
+		<img src="alexa.jpg" height="50%"><br>
+		<img src="headset.jfif" height="50%"><br>
+		<img src="watch.jpg" height="50%"><br>
+		<p id="cost"></p>
+		<button onclick="save()">Confirm</button>
+	</body>
+</html>
+<script>
+		document.getElementById("greet").innerHTML = "Hello " + localStorage.name + " this is what you ordered";
+		document.getElementById("cost").innerHTML = "<br><br>Total price is " + ((+sessionStorage.quantityAlexa * 49.99) + (+sessionStorage.quantityHeadset * 231) + (+sessionStorage.quantityWatch * 340)) + "€";
+		sessionStorage.myNewItem = document.getElementById("name").value;
+</script>

@@ -1,0 +1,18 @@
+1. create repository
+2. go to  project folder
+3. type cmd 
+4. git init 
+5. git add .
+6. copy the last 3 lines from the new repo
+
+
+/////////WHEN YOU ALREADY HAVE A REPO
+
+1. Go to the folder where you have the git init
+2. Type cmd
+3. Git add .
+4. Git commit -m "type the message"
+5. Git push
+6. Login
+
+

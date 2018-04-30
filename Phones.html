@@ -81,7 +81,7 @@
 </head>
 <body>
 <!-- Buttons and Logo -->
-
+<!-- Menu Bar -->
 <div class = "container">
 <br><br>
 <nav class="navbar navbar-expand" style="background-color: lightgrey;">
@@ -98,17 +98,20 @@
         <a class="nav-link" href="phones.html">&nbsp &nbsp Phones &nbsp &nbsp &nbsp<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="logout.html">&nbsp &nbsp Logout &nbsp &nbsp</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="login.html">&nbsp &nbsp Login &nbsp &nbsp</a>
-      </li>
-      <li class="nav-item active">
         <a class="nav-link" href="contacts.html">&nbsp &nbsp Contacts &nbsp &nbsp</a>
       </li>	
       <li class="nav-item active">
-        <a class="nav-link" href="moreAboutUs.html">&nbsp More About Us</a>
-      </li>	  
+        <a class="nav-link" href="moreAboutUs.html">&nbsp &nbsp More About Us &nbsp &nbsp</a>
+      </li>	  	 
+	  <li class="nav-item active">
+        <a class="nav-link" href="login.html">&nbsp &nbsp Login &nbsp &nbsp</a>
+      </li>
+	  <li class="nav-item active">
+        <a class="nav-link" href="logout.html">&nbsp &nbsp Logout &nbsp &nbsp</a>
+      </li>
+	  <li class="nav-item active">
+        <a class="nav-link" href="checkout.html">&nbsp &nbsp Checkout</a>
+      </li>
     </ul>
   </div>
 </nav>
@@ -118,7 +121,10 @@
 
 	<div id = "phoneBox">
 		<h1>iPhone x</h1>
-		<img src="Phone images/apple-iphone-x.png" alt="iPhone x" align="left"> <br><br><br><br><h2>Info<h2><h4 id="info"> Say hello to the future. iPhone X features a brand-new design that’s almost all screen. Immersive and intelligent, the iPhone X can respond to a tap, a voice and even a glance. The advanced camera and video system provide stunning portrait and slow-motion results, while the A11 Bionic processor powers apps from augmented reality to social media.</h4><h3 id="price">Price: €1129.99</h3>
+		<img src="Phone images/apple-iphone-x.png" alt="iPhone x" align="left"> <br><br><br><br><h2>Info<h2><h4 id="info"> Say hello to the future. 
+		iPhone X features a brand-new design that’s almost all screen. Immersive and intelligent, the iPhone X can respond to a tap, a voice and even a glance. 
+		The advanced camera and video system provide stunning portrait and slow-motion results, while the A11 Bionic processor powers apps from augmented reality
+		to social media.</h4><h3 id="price">Price: €1129.99</h3>
 		<br><br><br><br><br>
 		<p id="buttonP"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Purchase</button></p>
 		<div class="modal fade" id="myModal">
@@ -134,25 +140,26 @@
 				  <!-- Modal body -->
 				  <div class="modal-body">
 					<img src="Phone images/apple-iphone-x.png" alt="iPhone x"><br><br>
-					Enter Name: <input class="name" type="text" name="username">
+					Quantity:  <input class="name" type="text" name="username" id="quantity1">
 					<br><br>
-					Enter Coupon Code: <input class="eCoupon" type="text" name="eCoupon">
 				  </div>
 
 				  <!-- Modal footer -->
 				  <div class="modal-footer">
 					<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-success" data-dismiss="modal" onclick="cost()">Add to Cart</button>
+					<button type="button" class="btn btn-success" data-dismiss="modal" onclick="addPhone1()">Add to Cart</button>
 				  </div>
 
 				</div>
-			  </div>
+			  </div>  
 		</div>
 	</div>
 	<br>
 	<div id = "phoneBox">
 		<h1>iPhone 7</h1>
-		<img src="Phone images/apple-iphone-7.png" alt="iPhone 7" align="left"> <br><br><br><br><h2 text>Info<h2><h4 id="info"> Apple iPhone 7 is the most innovative and creative iPhone yet. Your iPhone is now water and splash resistant to a rating of IP67. You will also enjoy a new audio experience with Lightning Connector EarPods. SIM free option available (SIM free pricing shown is online only).</h4><h3 id="price">Price: €599.99</h3>
+		<img src="Phone images/apple-iphone-7.png" alt="iPhone 7" align="left"> <br><br><br><br><h2 text>Info<h2><h4 id="info"> Apple iPhone 7 is the most
+		innovative and creative iPhone yet. Your iPhone is now water and splash resistant to a rating of IP67. You will also enjoy a new audio experience 
+		with Lightning Connector EarPods. SIM free option available (SIM free pricing shown is online only).</h4><h3 id="price">Price: €599.99</h3>
 		<br><br><br><br><br><br>
 		<p id="buttonP"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">Purchase</button></p>
 		<div class="modal fade" id="myModal2">
@@ -168,15 +175,14 @@
 				  <!-- Modal body -->
 				  <div class="modal-body">
 					<img src="Phone Images/apple-iphone-7.png" alt="iPhone 7"><br><br>
-					Enter Name: <input class="name" type="text" name="username">
+					Quantity:  <input class="name" type="text" name="username" id="quantity2">
 					<br><br>
-					Enter Coupon Code: <input class="eCoupon" type="text" name="eCoupon">
 				  </div>
 
 				  <!-- Modal footer -->
 				  <div class="modal-footer">
 					<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-success" data-dismiss="modal" onclick="cost()">Add to Cart</button>
+					<button type="button" class="btn btn-success" data-dismiss="modal" onclick="addPhone2()">Add to Cart</button>
 				  </div>
 
 				</div>
@@ -186,7 +192,9 @@
 	<br>
 	<div id = "phoneBox">
 		<h1>Samsung Galaxy s9</h1>
-		<img src="Phone images/Samsung-Galaxy s9.png" alt="Samsung Galaxy s9" align="left"> <br><br><br><br><h2 text>Info<h2><h4 id="info"> The Camera. Reimagined. The Galaxy S9 is packed with incredible features to help you do more than you ever imagined. With a revolutionary camera that adapts like the human eye, get ready to capture your world like never before. SIM free option available (SIM free pricing shown is online only).</h4><h3 id="price">Price: €809.99</h3>
+		<img src="Phone images/Samsung-Galaxy s9.png" alt="Samsung Galaxy s9" align="left"> <br><br><br><br><h2 text>Info<h2><h4 id="info"> The Camera. 
+		Reimagined. The Galaxy S9 is packed with incredible features to help you do more than you ever imagined. With a revolutionary camera that adapts like 
+		the human eye, get ready to capture your world like never before. SIM free option available (SIM free pricing shown is online only).</h4><h3 id="price">Price: €809.99</h3>
 		<br><br><br><br><br><br>
 		<p id="buttonP"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal3">Purchase</button></p>
 		<div class="modal fade" id="myModal3">
@@ -202,15 +210,14 @@
 				  <!-- Modal body -->
 				  <div class="modal-body">
 					<img src="Phone images/Samsung-Galaxy s9.png" alt="Samsung Galaxy s9"><br><br>
-					Enter Name: <input class="name" type="text" name="username">
+					Quantity:  <input class="name" type="text" name="username" id="quantity3">
 					<br><br>
-					Enter Coupon Code: <input class="eCoupon" type="text" name="eCoupon">
 				  </div>
 
 				  <!-- Modal footer -->
 				  <div class="modal-footer">
 					<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-success" data-dismiss="modal" onclick="cost()">Add to Cart</button>
+					<button type="button" class="btn btn-success" data-dismiss="modal" onclick="addPhone3()">Add to Cart</button>
 				  </div>
 
 				</div>
@@ -220,7 +227,9 @@
 	<br>
 	<div id = "phoneBox">
 		<h1>Samsung Galaxy s8</h1>
-		<img src="Phone images/Samsung-Galaxy-s8.png" alt="Samsung Galaxy s8" align="left"> <br><br><br><br><h2 text>Info<h2><h4 id="info"> The Samsung Galaxy S8 features the beautiful rounded-corner Infinity Display and symmetrical metal sides that blend effortlessly for a seamless look. A stylish and powerful handset. SIM free option available (SIM free pricing shown is online only).</h4><h3 id="price">Price: €629.99</h3>
+		<img src="Phone images/Samsung-Galaxy-s8.png" alt="Samsung Galaxy s8" align="left"> <br><br><br><br><h2 text>Info<h2><h4 id="info"> The Samsung Galaxy S8
+		features the beautiful rounded-corner Infinity Display and symmetrical metal sides that blend effortlessly for a seamless look. A stylish and powerful handset.
+		SIM free option available (SIM free pricing shown is online only).</h4><h3 id="price">Price: €629.99</h3>
 		<br><br><br><br><br><br>
 		<p id="buttonP"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal4">Purchase</button></p>
 		<div class="modal fade" id="myModal4">
@@ -236,15 +245,14 @@
 				  <!-- Modal body -->
 				  <div class="modal-body">
 					<img src="Phone images/Samsung-Galaxy-s8.png" alt="Samsung Galaxy s8"><br><br>
-					Enter Name: <input class="name" type="text" name="username">
+					Quantity:  <input class="name" type="text" name="username" id="quantity4">
 					<br><br>
-					Enter Coupon Code: <input class="eCoupon" type="text" name="eCoupon">
 				  </div>
 
 				  <!-- Modal footer -->
 				  <div class="modal-footer">
 					<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-success" data-dismiss="modal" onclick="cost()">Add to Cart</button>
+					<button type="button" class="btn btn-success" data-dismiss="modal" onclick="addPhone4()">Add to Cart</button>
 				  </div>
 
 				</div>
@@ -254,7 +262,9 @@
 	<br>
 	<div id = "phoneBox">
 		<h1>Huawei p20</h1>
-		<img src="Phone images/huawei-p20.png" alt="Huawei P20" align="left"> <br><br><br><br><h2 text>Info<h2><h4 id="info"> The Huawei P20 introduces the all new Leica Dual Camera delivering clear, richly detailed expert quality photographs. The Huawei P20 is powered by the Kirin 970 chipset. It boosts 128GB internal storage, plenty of storage space for every brilliant moment captured.</h4>
+		<img src="Phone images/huawei-p20.png" alt="Huawei P20" align="left"> <br><br><br><br><h2 text>Info<h2><h4 id="info"> The Huawei P20 introduces
+		the all new Leica Dual Camera delivering clear, richly detailed expert quality photographs. The Huawei P20 is powered by the Kirin 970 chipset. 
+		It boosts 128GB internal storage, plenty of storage space for every brilliant moment captured.</h4>
 		<br><br><br><br><br><br><h3 id="price">Price: €549.99</h3>
 		<p id="buttonP"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal5">Purchase</button></p>
 		<div class="modal fade" id="myModal5">
@@ -270,15 +280,14 @@
 				  <!-- Modal body -->
 				  <div class="modal-body">
 					<img src="Phone images/huawei-p20.png" alt="Huawei P20"><br><br>
-					Enter Name: <input class="name" type="text" name="username">
+					Quantity:  <input class="name" type="text" name="username" id="quantity5">
 					<br><br>
-					Enter Coupon Code: <input class="eCoupon" type="text" name="eCoupon">
 				  </div>
 
 				  <!-- Modal footer -->
 				  <div class="modal-footer">
 					<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-success" data-dismiss="modal" onclick="cost()">Add to Cart</button>
+					<button type="button" class="btn btn-success" data-dismiss="modal" onclick="addPhone5()">Add to Cart</button>
 				  </div>
 
 				</div>
@@ -288,7 +297,9 @@
 	<br>
 	<div id = "phoneBox">
 		<h1>Sony Xperia</h1>
-		<img src="Phone images/sony-xperia.png" alt="Sony Xperia" align="left"> <br><br><br><br><h2 text>Info<h2><h4 id="info"> The Sony Xperia XZ2 is packed with all of the features you would expect from the Xperia range aswell as the lastest Sony technologies to deliver an entertainment experience that touches all your senses. A 19MP main camera, 4K HDR movie recording, powerful stereo sound and much more.</h4><h3 id="price">Price: €649.99</h3>
+		<img src="Phone images/sony-xperia.png" alt="Sony Xperia" align="left"> <br><br><br><br><h2 text>Info<h2><h4 id="info"> The Sony Xperia XZ2 is packed
+		with all of the features you would expect from the Xperia range aswell as the lastest Sony technologies to deliver an entertainment experience that 
+		touches all your senses. A 19MP main camera, 4K HDR movie recording, powerful stereo sound and much more.</h4><h3 id="price">Price: €649.99</h3>
 		<br><br><br><br><br><br>
 		<p id="buttonP"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal6">Purchase</button></p>
 		<div class="modal fade" id="myModal6">
@@ -304,15 +315,14 @@
 				  <!-- Modal body -->
 				  <div class="modal-body">
 					<img src="Phone images/sony-xperia.png" alt="Sony Xperia"><br><br>
-					Enter Name: <input class="name" type="text" name="username">
+					Quantity:  <input class="name" type="text" name="username" id="quantity6">
 					<br><br>
-					Enter Coupon Code: <input class="eCoupon" type="text" name="eCoupon">
 				  </div>
 
 				  <!-- Modal footer -->
 				  <div class="modal-footer">
 					<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-success" data-dismiss="modal" onclick="cost()">Add to Cart</button>
+					<button type="button" class="btn btn-success" data-dismiss="modal" onclick="addPhone6()">Add to Cart</button>
 				  </div>
 
 				</div>
@@ -321,8 +331,8 @@
 	</div>
 	<br>	
 
-
-	<hr><hr>	
+	<a href="checkout.html"><button type="button" class="btn btn-primary" align="right">Checkout</button></a>
+	<hr>	
 	
 		<div class="row">
 			<div class = "col-lg-12 ccc" id = "colour">
@@ -342,7 +352,7 @@
 				<a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook Logo" width="100" height="100"></a>
 				<input id = "colour1" type="color">
 				</div>
-				<marquee behavior="scroll" direction="left" class="coupon">Use Coupon code WEREAMAZING for 10% Off!</marquee>
+				<marquee behavior="scroll" direction="left" class="coupon">Use Coupon code WEAREAMAZING for 10% Off!</marquee>
 			</div>	
 		</div>
 	</div>
@@ -354,10 +364,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 	
 <script>
-	function cost()
-	{
-		alert("Added to basket!");
-	}
+
 	var col = document.getElementById("colour");
 	col.addEventListener("input",myFunction);
 				
@@ -367,6 +374,49 @@
 		document.getElementById("colour").style.backgroundColor = newColour;
 	}
 
+	sessionStorage.phone1 = 0;
+	sessionStorage.phone2 = 0;
+	sessionStorage.phone3 = 0;
+	sessionStorage.phone4 = 0;
+	sessionStorage.phone5 = 0;
+	sessionStorage.phone6 = 0;
+
+	function addPhone1()
+	{
+		alert("Added to basket!!");
+		
+		sessionStorage.phone1 = document.getElementById("quantity1").value;
+	}
+	
+	function addPhone2()
+	{
+		alert("Added to basket!!");
+		sessionStorage.phone2 = document.getElementById("quantity2").value;
+	}
+	
+	function addPhone3()
+	{
+		alert("Added to basket!!");
+		sessionStorage.phone3 = document.getElementById("quantity3").value;
+	}
+	
+	function addPhone4()
+	{
+		alert("Added to basket!!");
+		sessionStorage.phone4 = document.getElementById("quantity4").value;
+	}
+	
+	function addPhone5()
+	{
+		alert("Added to basket!!");
+		sessionStorage.phone5 = document.getElementById("quantity5").value;
+	}
+	
+	function addPhone6()
+	{
+		alert("Added to basket!!");
+		sessionStorage.phone6 = document.getElementById("quantity6").value;
+	}
 	
 </script>
 	

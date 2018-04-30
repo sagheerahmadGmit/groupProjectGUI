@@ -3,7 +3,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="images/ts.png">
-	<title>Tech Shop</title>
+	<title>Checkout</title>
 	
 	    <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -44,6 +44,25 @@
 	body{
 		background-image: url("images/background.jpg");
 	}	
+	
+	h1{
+		color:red;
+		text-align: center;
+	}
+	
+	.contacts{
+		border: solid 5px lightblue;
+		background-color: lightgrey;
+		text-align: center;
+	}
+	
+	#para{
+		font-weight: bold;
+	}
+	
+	h3{
+		color: red;
+	}
 
 </style>
 </head>
@@ -84,51 +103,54 @@
   </div>
 </nav>
 <hr></hr>
-
-<!-- Slideshow -->
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-	<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-	<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <a href="phones.html"><img class="d-block w-100" height="700" src="images/googlepixel.jpg" alt="First slide"></a>
-    </div>
-    <div class="carousel-item">
-      <a href="phones.html"><img class="d-block w-100" height="700" src="images/galaxyS9.jpg" alt="Second slide"></a>
-    </div>
-    <div class="carousel-item">
-      <a href="phones.html"><img class="d-block w-100" height="700" src="images/huaweimate10.jpg" alt="Third slide"></a>
-    </div>
-    <div class="carousel-item">
-      <a href="phones.html"><img class="d-block w-100" height="700" src="images/iphoneX.jpg" alt="Third slide"></a>
-    </div>	
-    <div class="carousel-item">
-      <a href="phones.html"><img class="d-block w-100" height="700" src="images/oneplus5t.jpg" alt="Third slide"></a>
-    </div>		
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-
-<br><br>
-
-<!-- Arrays Slideshow -->
-&nbsp &nbsp
-<a href="phones.html"><img src="" width= "500" height = "300" id = "myPictures" alt = "an image of a phone"></a>
-&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-<a href="phones.html"><img src="" width= "500" height = "300" id = "myPictures1" alt = "an image of a phone"></a>
 	
+	<div class = 'contacts'>
+		
+		<h1>Checkout</h1><br>
+		<h2 id="customer"></h2>
+		
+		<div>
+			<div>
+				<br>
+				<div id="left">
+					<img src="Phone images/apple-iphone-x.png" alt="iPhone x" align="center"> 
+				</div>
+				<div id ="center">
+					<img src="Phone images/apple-iphone-7.png" alt="iPhone 7" align="center">
+				</div>
+				<div id ="right">
+					<img src="Phone images/Samsung-Galaxy s9.png" alt="Samsung Galaxy s9" align="center">
+					<br><br><br>
+				</div>
+			</div>	
+		</div>
+		<div>
+			<div>
+				<br>
+				<div id="left">
+					<img src="Phone images/Samsung-Galaxy-s8.png" alt="Samsung Galaxy s8" align="center">
+				</div>
+				<div id ="center">
+					<img src="Phone images/huawei-p20.png" alt="Huawei P20" align="center">
+				</div>
+				<div id ="right">
+					<img src="Phone images/sony-xperia.png" alt="Sony Xperia" align="center">
+					<br><br><br>
+				</div>
+			</div>	
+		</div>
+		
+		<h4 id="phoneNames"></h4>
+		<h3 id="cost"></h3>
+		
+		<b>Enter Coupon Code: </b><input type="text" id="discount"></input><br><br>
+		<button type="button" class="btn btn-primary" align="right" onclick="discountPrice()">Enter</button>
+		
+		<h3 id="newPrice"></h3>
+		<button type="button" class="btn btn-primary" align="right" onclick="confirm()">Confirm</button>
+		
+	</div>
+
 	<hr><hr>	
 	
 		<div class="row">
@@ -147,7 +169,6 @@
 				<div id ="right">
 				<a href ="https://twitter.com/"> <img src="images/twitter.png" alt="Twitter Logo" width="100" height="100"></a>
 				<a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook Logo" width="100" height="100"></a>
-				<input id = "colour1" type="color">
 				</div>
 				<marquee behavior="scroll" direction="left" class="coupon">Use Coupon code WEAREAMAZING for 10% Off!</marquee>
 			</div>	
@@ -160,26 +181,77 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 	
-<script>
-	
-	var pictures = new Array ("images/p20.jpg", "images/v30.jpg", "images/iphoneX.jpg","images/xz2.jpg", "images/galaxyS9.jpg",
-	"images/googlepixel.jpg", "images/huaweimate10.jpg", "images/oneplus5t.jpg");
-	var randomNum = Math.floor(Math.random() * pictures.length);
-	document.getElementById("myPictures").src = pictures[randomNum];
-	randomNum = Math.floor(Math.random() * pictures.length);
-	document.getElementById("myPictures1").src = pictures[randomNum];
-	
-	var col = document.getElementById("colour");
-	col.addEventListener("input",myFunction);
-				
-	function myFunction()
-	{
-		var newColour = document.getElementById("colour1").value;
-		document.getElementById("colour").style.backgroundColor = newColour;
-	}
+	<script>
+		
+		document.getElementById("customer").innerHTML = "Hello " + sessionStorage.name + " welcome to your checkout page!!";
+		var t = ((+sessionStorage.phone1 * 1129.99) + (+sessionStorage.phone2 * 599.99) + 
+		(+sessionStorage.phone3 * 809.99) + (+sessionStorage.phone4 * 629.99) + (+sessionStorage.phone5 * 549.99) + (+sessionStorage.phone6 * 549.99));
+		var total = "€" + t.toFixed(2);
+		document.getElementById("cost").innerHTML = "<br><br>Total price is " + total;
+		
+		function discountPrice()
+		{
+			var disc = document.getElementById("discount").value;
+		
+			if (disc == "weareamazing" || disc == "WEAREAMAZING")
+			{
+				var t2 = ((+sessionStorage.phone1 * 1129.99) + (+sessionStorage.phone2 * 599.99) + 
+				(+sessionStorage.phone3 * 809.99) + (+sessionStorage.phone4 * 629.99) + (+sessionStorage.phone5 * 549.99) + (+sessionStorage.phone6 * 549.99)) * 0.9;
+				var newtotal = "€" + t2.toFixed(2);
+				document.getElementById("newPrice").innerHTML = "<br><br>Total price is " + newtotal;
+			}
+			else
+			{
+				document.getElementById("newPrice").innerHTML = "<br><br>Total price is " + total;
+			}
+		}
+		var totalNames = "";
+		
+		if (sessionStorage.phone1 > 0)
+		{
+			//var phoneName1 = "Iphone X"
+			totalNames += "<br> Iphone x";
+		}
+		
+		if (sessionStorage.phone2 > 0)
+		{
+			//var phoneName2 = "Iphone 7"
+			totalNames += "<br> Iphone 7";
+		}
 
-	
-</script>
+		if (sessionStorage.phone3 > 0)
+		{
+			//var phoneName3 = "Samsung-Galaxy-s9"
+			totalNames += "<br> Samsung-Galaxy-s9";
+		}
+
+		if (sessionStorage.phone4 > 0)
+		{
+			//var phoneName4 = "Samsung-Galaxy-s8"
+			totalNames += "<br> Samsung-Galaxy-s8";
+		}
+
+		if (sessionStorage.phone5 > 0)
+		{
+			//var phoneName5 = "Huawei p20"
+			totalNames += "<br> Huawei p20";
+		}
+
+		if (sessionStorage.phone6 > 0)
+		{
+			//var phoneName6 = "Sony Xperia x2"
+			totalNames += "<br> Sony Xperia x2";
+		}		
+		
+		function confirm()
+		{
+			alert("Purchase Successful!!");
+			window.location.href = "index.html";	
+		}
+		
+		document.getElementById("phoneNames").innerHTML = "The phones you have bought are: " + totalNames;
+		
+	</script>
 	
 </body>
 </html> 
